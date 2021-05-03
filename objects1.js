@@ -21,18 +21,7 @@ console.log(person);
 
 // **2. Get Values.** 
 // Create a function that returns an array of all **values** of an object's properties. 
-// * Examples:
-// ```javascript
-// getObjectValues({
-//   choice1: "tea",
-//   choice2: "coffee",
-//   choice3: "milk"
-// })
-// ```
-// * Expected output: 
-// ```javascript
-// ["tea", "coffee", "milk"] 
-// ```
+``
 
 const breakTimeDrink = {
     choice1: "tea",
@@ -43,7 +32,7 @@ const breakTimeDrink = {
 function getObjectValues() {
     const values = Object.values(breakTimeDrink);//returns an array of values
     console.log(values);
-};
+}
 
 getObjectValues();//it prints : [ 'tea', 'coffee', 'milk' ]
 
@@ -88,18 +77,6 @@ console.log(animals);
 
 // **2. List Properties.**
 // Create a function that returns an array of **properties** of a javascript object. 
-// * Example
-// ```javascript
-// let student = {
-//   name: "Mike", 
-//   class: "4A" 
-//   course: "English"
-// }
-// ```
-// * Expected output: 
-// ```javascript
-// ["name", "class", "course"]
-// ```
 
 let student = {
       name: "Mike", 
@@ -112,14 +89,6 @@ let student = {
 
 // **3. Merge.**
 // Create a function that takes two objects as its parameters and merges them together into a new object. 
-// * Example
-// ```javascript
-// let first = {firstName: "John"}
-// let last = {lastName: "Smith"}
-// ```
-// * Expected output:
-// ```javascript
-// {firstName: "John", lastName: "Smith"}
 
 
 let first = {firstName: "John"};
@@ -183,12 +152,6 @@ console.log(invert(person3));// this is another way: prints { John: 'name', teac
 
 // **5. Return Keys and Values.**
 // Write a program that takes an object and returns an array which contains two arrays: one for the keys of the object and the other for the values of the object.
-
-// * Examples:
-// ```javascript
-// { a: 1, b: 2, c: 3 } ➞ [["a", "b", "c"], [1, 2, 3]]
-// {key: true} ➞ [["key"], [true]]
-// ```
 
 const fruits = {
     fruit1: "orange",
