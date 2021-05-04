@@ -10,13 +10,26 @@ const person = {
 
 const keys = Object.keys(person);
 console.log(person);
-// it prints:
+ it prints:
 // {
 //     firstName: 'Maria',
 //     lastName: 'Martinez Santos',
 //     job: 'student',
 //     school: 'DCI'
 //   }
+
+//or with a loop!
+for (const prop in person) {
+
+  console.log(`person.${prop} : ${person[prop]}`);
+
+}  
+//it prints 
+// person.firstName : Maria
+// person.lastName : Martinez Santos
+// person.job : student
+// person.school : DCI
+//
 
 
 // **2. Get Values.** 
@@ -64,7 +77,7 @@ const rainForestAnimals = {
     animal3: "Crocodriles",
     animal4: "Panther",
 }
-const animals = Object.entries(rainForestAnimals ); //returns an array of the key-value pairs
+const animals = Object.entries(rainForestAnimals); //returns an array of the key-value pairs
 console.log(animals); 
 //it prints [
 //     [ 'animal1', 'Monkeys' ],
@@ -94,10 +107,9 @@ let student = {
 let first = {firstName: "John"};
 let last = {lastName: "Smith"};
 
-const mergedFirstLast = Object.assign(first, last);
+const mergedFirstLast = (object1, object2) => Object.assign(object1, object2);
 
-console.log(first);//it prints : { firstName: 'John', lastName: 'Smith' }
-console.log(mergedFirstLast); //it also prints : { firstName: 'John', lastName: 'Smith' }
+console.log(mergedFirstLast(first, last)); //it also prints : { firstName: 'John', lastName: 'Smith' }
 
 
 // ```
